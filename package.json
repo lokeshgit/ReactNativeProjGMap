@@ -1,0 +1,23 @@
+{
+  "name": "reactnativeproj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Script1.js",
+  "scripts": {
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "clean": "cd android && ./gradlew clean && cd .."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react-native-google-places-autocomplete": "^2.5.7",
+    "react-native-maps": "^1.24.5",
+    "react-native-sqlite-storage": "^6.0.1"
+  },
+  "devDependencies": {
+    "@react-native-community/cli": "12.2.3"
+
+  }}
