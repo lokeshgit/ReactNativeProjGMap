@@ -9,8 +9,10 @@ export default function SearchScreen({ onPlaceSelected }) {
         placeholder="Search for a place"
         onPress={(data, details = null) => onPlaceSelected(data, details)}
         fetchDetails={true}
+        debounce={200}
+        enablePoweredByContainer={false}
         query={{
-          key: 'YOUR_GOOGLE_API_KEY',
+          key: process.env.GOOGLE_PLACES_API_KEY,
           language: 'en',
         }}
       />
